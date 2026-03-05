@@ -1,0 +1,17 @@
+{
+  "name": "how-to-check-transmission-fluid",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate:images": "node scripts/generate-images.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "next": "^15.5.12",
+    "openai": "^6.25.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
