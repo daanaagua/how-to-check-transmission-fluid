@@ -24,6 +24,12 @@ export function generateMetadata({ params }) {
   return {
     title: guide.title,
     description: guide.metaDescription,
+    keywords: [
+      guide.h1.toLowerCase(),
+      "transmission fluid guide",
+      "transmission fluid maintenance",
+      "how to check transmission fluid",
+    ],
     alternates: {
       canonical: guide.path,
     },

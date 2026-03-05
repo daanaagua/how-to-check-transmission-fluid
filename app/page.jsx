@@ -10,6 +10,12 @@ import {
 export const metadata = {
   title: mainGuide.title,
   description: mainGuide.metaDescription,
+  keywords: [
+    "how to check transmission fluid",
+    "transmission fluid dipstick",
+    "check transmission fluid hot or cold",
+    "transmission fluid check step by step",
+  ],
   alternates: {
     canonical: "/",
   },

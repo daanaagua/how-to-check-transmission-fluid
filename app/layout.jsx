@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 
 const siteUrl =
@@ -12,6 +13,15 @@ export const metadata = {
   },
   description:
     "Professional, practical guides for checking transmission fluid level, condition, and service signals.",
+  keywords: [
+    "how to check transmission fluid",
+    "check transmission fluid",
+    "transmission fluid level",
+    "automatic transmission fluid",
+    "cvt transmission fluid",
+    "transmission maintenance",
+    "transmission fluid color chart",
+  ],
   alternates: {
     canonical: "/",
   },
@@ -42,6 +52,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-D81NDQ6MTK"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-D81NDQ6MTK');
+          `}
+        </Script>
         <div className="site-shell">
           <header className="site-header">
             <div className="site-header-inner">
