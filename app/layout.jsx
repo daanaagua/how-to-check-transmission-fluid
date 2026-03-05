@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
@@ -29,10 +30,50 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Transmission Fluid Check",
+    url: siteUrl,
+    sameAs: [],
+  };
+
   return (
     <html lang="en">
       <body>
-        <main className="page-wrap">{children}</main>
+        <div className="site-shell">
+          <header className="site-header">
+            <div className="site-header-inner">
+              <Link href="/" className="brand-link">
+                Transmission Fluid Check
+              </Link>
+              <nav className="top-nav" aria-label="Primary">
+                <Link href="/">Guide</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href="/about">About</Link>
+                <Link href="/contact">Contact</Link>
+              </nav>
+            </div>
+          </header>
+
+          <main className="page-wrap">{children}</main>
+
+          <footer className="site-footer">
+            <div className="site-footer-inner">
+              <p>Maintenance education for transmission fluid checks.</p>
+              <nav aria-label="Footer">
+                <Link href="/about">About</Link>
+                <Link href="/privacy-policy">Privacy</Link>
+                <Link href="/terms">Terms</Link>
+                <Link href="/blog">Blog</Link>
+              </nav>
+            </div>
+          </footer>
+        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
       </body>
     </html>
   );

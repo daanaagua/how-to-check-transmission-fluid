@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "generate:images": "node scripts/generate-images.mjs"
+    "generate:images": "node scripts/generate-images.mjs",
+    "generate:images:force": "node scripts/generate-images.mjs --force"
   },
   "dependencies": {
     "dotenv": "^17.3.1",
