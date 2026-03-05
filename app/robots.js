@@ -36,6 +36,7 @@ export default function robots() {
         allow: "/",
       },
     ],
+    host: siteUrl,
     sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
