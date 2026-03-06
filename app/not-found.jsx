@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Page Not Found",
+  description:
+    "The page you requested is not available. Return to the main transmission fluid guide for step-by-step instructions.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function NotFound() {
   return (
     <section className="content-card not-found">
