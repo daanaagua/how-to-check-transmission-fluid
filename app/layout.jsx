@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Script from "next/script";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
-
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.checktransmissionfluid.help";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),

@@ -1,5 +1,6 @@
-import { longTailGuides, siteUrl } from "@/lib/guides";
+import { longTailGuides } from "@/lib/guides";
 import { blogPosts } from "@/lib/blog";
+import { siteUrl } from "@/lib/site";
 
 export default function sitemap() {
   const base = [
