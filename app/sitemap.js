@@ -5,7 +5,7 @@ import { siteUrl } from "@/lib/site";
 export default function sitemap() {
   const base = [
     {
-      url: siteUrl,
+      url: `${siteUrl}/`,
       lastModified: "2026-03-05",
       changeFrequency: "weekly",
       priority: 1,
