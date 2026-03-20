@@ -90,6 +90,13 @@ export default function RootLayout({ children }) {
                 <Link href="/privacy-policy">Privacy</Link>
                 <Link href="/terms">Terms</Link>
                 <Link href="/blog">Blog</Link>
+                <a
+                  href="https://telegra.ph/Dead-Strike-The-Browser-Based-Zombie-FPS-That-Takes-2-Seconds-to-Start-and-2-Hours-to-Stop-Playing-03-20"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Dead Strike
+                </a>
               </nav>
             </div>
           </footer>
