@@ -104,6 +104,13 @@ export default function RootLayout({ children }) {
                 >
                   Rentry
                 </a>
+                <a
+                  href="https://dpaste.com/59QFEL7MU"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Dpaste
+                </a>
               </nav>
             </div>
           </footer>
