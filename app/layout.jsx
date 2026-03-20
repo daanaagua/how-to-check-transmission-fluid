@@ -97,6 +97,13 @@ export default function RootLayout({ children }) {
                 >
                   Dead Strike
                 </a>
+                <a
+                  href="https://rentry.co/4qzo4bin"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Rentry
+                </a>
               </nav>
             </div>
           </footer>
